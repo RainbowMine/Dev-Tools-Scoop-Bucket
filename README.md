@@ -17,19 +17,35 @@ scoop update
 scoop search <package>
 ```
 
-Install a package after it becomes available:
+Install a package:
 
 ```powershell
-scoop install dev-tools/<package>
+scoop install dev-tools/orca
 ```
 
 ## Packages
 
-No packages are available yet.
+All packages in this bucket currently target Windows x64.
+
+| Package | Project | Description |
+| --- | --- | --- |
+| `orca` | [stablyai/orca](https://github.com/stablyai/orca) | Agent development environment for parallel coding agents. |
+| `open-design` | [nexu-io/open-design](https://github.com/nexu-io/open-design) | Local-first desktop design app powered by coding agents. |
+| `dyad` | [dyad-sh/dyad](https://github.com/dyad-sh/dyad) | Local, open-source AI app builder for power users. |
+
+Install any package with its manifest name, for example:
+
+```powershell
+scoop install dev-tools/orca
+scoop install dev-tools/open-design
+scoop install dev-tools/dyad
+```
+
+Manifests track stable GitHub Releases and are refreshed automatically by GitHub Actions.
 
 ## Contributing
 
-Package requests and pull requests are welcome. When a project publishes compatible Windows ZIP assets through GitHub Releases, its manifest can be generated with [hymkor/make-scoop-manifest](https://github.com/hymkor/make-scoop-manifest) and reviewed before inclusion.
+Package requests and pull requests are welcome. New manifests should reference a stable Windows release asset, include a verifiable hash, and document any archive layout needed by Scoop.
 
 ## License
 

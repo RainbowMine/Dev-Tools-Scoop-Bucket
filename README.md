@@ -4,23 +4,38 @@ A community-maintained [Scoop](https://scoop.sh/) bucket for developer tools on 
 
 ## Usage
 
-Add the bucket:
+Install [Scoop](https://scoop.sh/) on Windows, then add this bucket:
 
 ```powershell
 scoop bucket add dev-tools https://github.com/RainbowMine/Dev-Tools-Scoop-Bucket
 ```
 
-Update Scoop and search for a package:
+Search for a package:
 
 ```powershell
-scoop update
-scoop search <package>
+scoop search orca
+scoop search open-design
 ```
 
-Install a package:
+Install packages using the bucket-qualified manifest name:
 
 ```powershell
 scoop install dev-tools/orca
+scoop install dev-tools/open-design
+```
+
+Refresh bucket manifests and update installed packages:
+
+```powershell
+scoop update
+scoop update orca
+scoop update open-design
+```
+
+Remove the bucket when it is no longer needed:
+
+```powershell
+scoop bucket rm dev-tools
 ```
 
 ## Packages
@@ -31,13 +46,6 @@ All packages in this bucket currently target Windows x64.
 | --- | --- | --- |
 | `orca` | [stablyai/orca](https://github.com/stablyai/orca) | Agent development environment for parallel coding agents. |
 | `open-design` | [nexu-io/open-design](https://github.com/nexu-io/open-design) | Local-first desktop design app powered by coding agents. |
-
-Install any package with its manifest name, for example:
-
-```powershell
-scoop install dev-tools/orca
-scoop install dev-tools/open-design
-```
 
 Manifests track stable GitHub Releases and are refreshed automatically by GitHub Actions.
 

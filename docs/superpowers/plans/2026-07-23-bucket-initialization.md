@@ -34,11 +34,11 @@ Add the bucket:
 scoop bucket add dev-tools https://github.com/RainbowMine/Dev-Tools-Scoop-Bucket
 ```
 
-Update Scoop and search this bucket:
+Update Scoop and search for a package:
 
 ```powershell
 scoop update
-scoop search dev-tools/
+scoop search <package>
 ```
 
 Install a package after it becomes available:
@@ -81,7 +81,7 @@ Run:
 
 ```bash
 rg -n "scoop bucket add dev-tools https://github.com/RainbowMine/Dev-Tools-Scoop-Bucket" README.md
-rg -n "scoop search dev-tools/" README.md
+rg -n "scoop search <package>" README.md
 rg -n "scoop install dev-tools/<package>" README.md
 rg -n "hymkor/make-scoop-manifest" README.md
 git diff --check

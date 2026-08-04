@@ -26,13 +26,14 @@ scoop install dev-tools/open-design
 scoop install dev-tools/buzz
 ```
 
-Refresh bucket manifests and update installed packages:
+Refresh bucket indexes, then update installed packages. **These two commands do different things — don't confuse them:**
+
+- `scoop update` (no argument) runs `git pull` on every bucket, pulling the latest manifests from this repo. Run this **before installing a newly added package** so your local bucket index is current.
+- `scoop update *` or `scoop update <app>` only upgrades already-installed apps and **never** fetches new manifests added to the bucket. If a brand-new package was just added upstream, this command alone will not make it installable.
 
 ```powershell
-scoop update
-scoop update orca
-scoop update open-design
-scoop update buzz
+scoop update          # refresh bucket indexes (pulls new manifests) — run first
+scoop update *        # upgrade all installed apps to their latest versions
 ```
 
 Remove the bucket when it is no longer needed:

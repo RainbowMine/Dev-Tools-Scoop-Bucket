@@ -2,6 +2,11 @@ name: Excavator
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'bucket/**'
+      - '.github/workflows/excavator.yml'
   schedule:
     - cron: '20 */4 * * *'
 

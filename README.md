@@ -15,6 +15,7 @@ Search for a package:
 ```powershell
 scoop search orca
 scoop search open-design
+scoop search buzz
 ```
 
 Install packages using the bucket-qualified manifest name:
@@ -22,6 +23,7 @@ Install packages using the bucket-qualified manifest name:
 ```powershell
 scoop install dev-tools/orca
 scoop install dev-tools/open-design
+scoop install dev-tools/buzz
 ```
 
 Refresh bucket manifests and update installed packages:
@@ -30,6 +32,7 @@ Refresh bucket manifests and update installed packages:
 scoop update
 scoop update orca
 scoop update open-design
+scoop update buzz
 ```
 
 Remove the bucket when it is no longer needed:
@@ -46,6 +49,7 @@ All packages in this bucket currently target Windows x64.
 | --- | --- | --- |
 | `orca` | [stablyai/orca](https://github.com/stablyai/orca) | Agent development environment for parallel coding agents. |
 | `open-design` | [nexu-io/open-design](https://github.com/nexu-io/open-design) | Local-first desktop design app powered by coding agents. |
+| `buzz` | [block/buzz](https://github.com/block/buzz) | Self-hostable workspace where humans and AI agents share the same rooms. |
 
 Manifests track stable GitHub Releases and are refreshed automatically by GitHub Actions.
 

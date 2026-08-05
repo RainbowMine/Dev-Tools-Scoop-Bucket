@@ -1,12 +1,12 @@
 {
-    "version": "0.5.4",
+    "version": "0.5.5",
     "description": "Self-hostable workspace where humans and AI agents share the same rooms (Buzz by Block).",
     "homepage": "https://github.com/block/buzz",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/block/buzz/releases/download/desktop-v0.5.4/Buzz_0.5.4_x64-setup_alpha-unsigned.exe#/dl.7z",
-            "hash": "7e75b0ab32a5b8c86fc9ee67f626d11baa96131fbdadffc5776a29570f9e291a"
+            "url": "https://github.com/block/buzz/releases/download/desktop-v0.5.5/Buzz_0.5.5_x64-setup_alpha-unsigned.exe#/dl.7z",
+            "hash": "c4a39d2f78e03057d6b6dab6b279aa7517b5670cafe43aab762c269b78ed8bf6"
         }
     },
     "post_install": "Remove-Item -Recurse -Force \"$dir\\`$PLUGINSDIR\", \"$dir\\`$*\" -ErrorAction SilentlyContinue",

@@ -16,6 +16,7 @@ Search for a package:
 scoop search orca
 scoop search open-design
 scoop search buzz
+scoop search openworker
 ```
 
 Install packages using the bucket-qualified manifest name:
@@ -24,6 +25,7 @@ Install packages using the bucket-qualified manifest name:
 scoop install dev-tools/orca
 scoop install dev-tools/open-design
 scoop install dev-tools/buzz
+scoop install dev-tools/openworker
 ```
 
 Refresh bucket indexes, then update installed packages. **These two commands do different things — don't confuse them:**
@@ -51,6 +53,7 @@ All packages in this bucket currently target Windows x64.
 | `orca` | [stablyai/orca](https://github.com/stablyai/orca) | Agent development environment for parallel coding agents. |
 | `open-design` | [nexu-io/open-design](https://github.com/nexu-io/open-design) | Local-first desktop design app powered by coding agents. |
 | `buzz` | [block/buzz](https://github.com/block/buzz) | Self-hostable workspace where humans and AI agents share the same rooms. |
+| `openworker` | [andrewyng/openworker](https://github.com/andrewyng/openworker) | Open-source AI coworker that completes everyday tasks from the desktop. |
 
 Manifests track stable GitHub Releases and are refreshed automatically by GitHub Actions.
 

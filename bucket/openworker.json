@@ -1,12 +1,12 @@
 {
-    "version": "0.1.7",
+    "version": "0.2.1",
     "description": "Open-source AI coworker that completes everyday tasks from the desktop.",
     "homepage": "https://github.com/andrewyng/openworker",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/andrewyng/openworker/releases/download/v0.1.7/OpenWorker-windows-setup.exe#/dl.7z",
-            "hash": "7989d662e6107c871afddc83c2881de09d69fecfcf4bb3756779e72d17cea013"
+            "url": "https://github.com/andrewyng/openworker/releases/download/v0.2.1/OpenWorker-windows-setup.exe#/dl.7z",
+            "hash": "a4fa05ee25036112ca06cb484ee98663306f79ad486ce8c34d58542813b26dfa"
         }
     },
     "post_install": "Remove-Item -Recurse -Force \"$dir\\`$PLUGINSDIR\"",

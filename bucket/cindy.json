@@ -9,10 +9,11 @@
             "hash": "6e48da64ecfde7fcb2268cad3fb1de10ad510c7d226ba01c87e4a1401de122b9"
         }
     },
+    "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
     "post_install": "Remove-Item -Recurse -Force \"$dir\\`$PLUGINSDIR\", \"$dir\\`$*\" -ErrorAction SilentlyContinue",
     "shortcuts": [
         [
-            "cindy.exe",
+            "Cindy.exe",
             "Cindy"
         ]
     ],

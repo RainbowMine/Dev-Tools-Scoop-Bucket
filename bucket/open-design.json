@@ -1,12 +1,12 @@
 {
-    "version": "0.21.1",
+    "version": "0.24.1",
     "description": "Local-first desktop design app powered by coding agents.",
     "homepage": "https://github.com/nexu-io/open-design",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nexu-io/open-design/releases/download/open-design-v0.21.1/open-design-0.21.1-win-x64-setup.exe#/dl.7z",
-            "hash": "cd203b1c931fe1f7621929945b5aa8d2387a5c6fa5273cf66325a0b443224e7e"
+            "url": "https://github.com/nexu-io/open-design/releases/download/open-design-v0.24.1/open-design-0.24.1-win-x64-setup.exe#/dl.7z",
+            "hash": "3a544dca7a5f078029d55f272e218278e52edac55efbfb292d56258113e8a441"
         }
     },
     "pre_install": [
